@@ -1,0 +1,21 @@
+{
+  "name": "github_actions_test_1",
+  "version": "1.0.0",
+  "description": "A repo to test GitHub Actions in a certain way of linting, testing and deployment.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lint": "echo \"Linting OK\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ozanmuyes/github_actions_test_1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ozanmuyes/github_actions_test_1/issues"
+  },
+  "homepage": "https://github.com/ozanmuyes/github_actions_test_1#readme"
+}
