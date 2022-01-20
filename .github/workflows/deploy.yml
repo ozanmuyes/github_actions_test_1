@@ -8,7 +8,7 @@ on:
 
 jobs:
   deploy:
-    name: Lint, Test and Deploy
+    name: Lint, Test, Build and Deploy
     runs-on: ubuntu-latest # dev-ec2
     steps:
       - name: Checkout
@@ -42,6 +42,12 @@ jobs:
       # TODO
 
       #endregion Test
+
+      #region Build
+
+      # TODO Compile or Dockerize
+
+      #endregion Build
 
       #region Deploy
 
