@@ -1,0 +1,53 @@
+name: Deploy
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+jobs:
+  deploy:
+    name: Lint, Test and Deploy
+    runs-on: dev-ec2
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+        with:
+          # Make sure the actual branch is checked out when running on pull requests
+          ref: ${{ github.head_ref }}
+
+      #region Lint
+
+      # From https://github.com/prettier/prettier/blob/main/.github/workflows/lint.yml
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v2.5.1
+        with:
+          cache: "yarn"
+
+      - name: Install Dependencies
+        run: yarn install --frozen-lockfile
+
+      - name: Check Dependencies
+        run: yarn lint
+
+      - name: Check Lock File Changes
+        run: yarn && echo "Listing changed files:" && git diff --name-only --exit-code && echo "No files changed during lint."
+
+      #endregion Lint
+
+      #region Test
+
+      # TODO
+
+      #endregion Test
+
+      #region Deploy
+
+      # TODO
+
+      - name: Finish Deploy
+        run: echo "Deployed"
+
+      #endregion Deploy
