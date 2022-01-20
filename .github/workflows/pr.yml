@@ -39,7 +39,8 @@ jobs:
 
       #region Test
 
-      # TODO
+      - name: Run tests
+        run: yarn test
 
       #endregion Test
 
