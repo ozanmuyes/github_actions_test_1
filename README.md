@@ -7,3 +7,7 @@ Please note that the project in the repo is highly opinionated, raison d'etre of
 ## References
 
 * https://stackoverflow.com/a/58655352/250453
+
+## Important Notes
+
+* Do NOT delete branch via GitHub, delete branch locally (and the remote one) with your git client
