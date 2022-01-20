@@ -4,8 +4,8 @@
   "description": "A repo to test GitHub Actions in a certain way of linting, testing and deployment.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Tests FAILING\" && exit 1",
-    "lint": "echo \"Linting FAILING\" && exit 1"
+    "test": "echo \"Tests OK\"",
+    "lint": "echo \"Linting OK\""
   },
   "repository": {
     "type": "git",
